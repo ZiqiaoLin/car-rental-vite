@@ -1,0 +1,263 @@
+[
+  {
+    "vin": "X5AZ0XD6ENIQUGFW7",
+    "type": "Sedan",
+    "brand": "Toyota",
+    "model": "Camry",
+    "imageUrl": "images/toyota camry.jpg",
+    "fuelType": "Hybrid",
+    "pricePerDay": 68.00
+  },
+  {
+    "vin": "VETNF1G0U7JNE94Q6",
+    "type": "SUV",
+    "brand": "Toyota",
+    "model": "RAV4",
+    "imageUrl": "images/toyota rav4.jpg",
+    "fuelType": "Hybrid",
+    "pricePerDay": 94.00
+  },
+  {
+    "vin": "UX15TS2LILHAXBJ5R",
+    "type": "SUV",
+    "brand": "Toyota",
+    "model": "Landcruiser",
+    "imageUrl": "images/toyota landcruiser.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 100.00
+  },
+  {
+    "vin": "UX15TS2HSIQAXBJ5R",
+    "type": "Coupe",
+    "brand": "Toyota",
+    "model": "Supra",
+    "imageUrl": "images/toyota supra.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 110.00
+  },
+  {
+    "vin": "F2MTJRAQTSB3SEUJF",
+    "type": "SUV",
+    "brand": "Subaru",
+    "model": "Forester",
+    "imageUrl": "images/subaru forester.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 84.00
+  },
+  {
+    "vin": "3V4JF0MPF6G8W9RM9",
+    "type": "SUV",
+    "brand": "Subaru",
+    "model": "Outback",
+    "imageUrl": "images/subaru outback.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 80.00
+  },
+  {
+    "vin": "72A4TD4K8OCG3RI1R",
+    "type": "Coupe",
+    "brand": "Subaru",
+    "model": "BRZ",
+    "imageUrl": "images/subaru brz.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 90.00
+  },
+  {
+    "vin": "21ASDD4K8OCG3RI1R",
+    "type": "Sedan",
+    "brand": "Subaru",
+    "model": "WRX",
+    "imageUrl": "images/subaru wrx.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 85.00
+  },
+  {
+    "vin": "OAFR8Y8KTMJS5E89O",
+    "type": "Sedan",
+    "brand": "Mazda",
+    "model": "3",
+    "imageUrl": "images/mazda 3.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 52.00
+  },
+  {
+    "vin": "N6WURI8D4OHURNZ6R",
+    "type": "Sedan",
+    "brand": "Mazda",
+    "model": "6",
+    "imageUrl": "images/mazda 6.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 58.00
+  },
+  {
+    "vin": "DEAHDUTEZ0VHPJQEM",
+    "type": "SUV",
+    "brand": "Mazda",
+    "model": "CX-5",
+    "imageUrl": "images/mazda cx 5.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 78.00
+  },
+  {
+    "vin": "YV8I83XKY6RDTRR82",
+    "type": "SUV",
+    "brand": "Mazda",
+    "model": "CX-3",
+    "imageUrl": "images/mazda cx 3.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 70.00
+  },
+  {
+    "vin": "YV8I83XKY6RSLXA84",
+    "type": "Coupe",
+    "brand": "Mazda",
+    "model": "MX-5",
+    "imageUrl": "images/mazda mx 5.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 80.00
+  },
+  {
+    "vin": "DQPE37EZ0G7K3RJCF",
+    "type": "SUV",
+    "brand": "Ford",
+    "model": "Everest",
+    "imageUrl": "images/ford everest.jpg",
+    "fuelType": "Diesel",
+    "pricePerDay": 100.00
+  },
+  {
+    "vin": "DQPE37EZHSXM3RJCF",
+    "type": "Sedan",
+    "brand": "Ford",
+    "model": "Falcon",
+    "imageUrl": "images/ford falcon.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 65.00
+  },
+  {
+    "vin": "G2MLJKXDG67EK988U",
+    "type": "Coupe",
+    "brand": "Ford",
+    "model": "Mustang",
+    "imageUrl": "images/ford mustang.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 110.00
+  },
+  {
+    "vin": "4JOI6UM582T9GYXEE",
+    "type": "Sedan",
+    "brand": "BMW",
+    "model": "3 Series",
+    "imageUrl": "images/bmw 3 series.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 90.00
+  },
+  {
+    "vin": "YMX1WNGXU70VCJNMK",
+    "type": "Sedan",
+    "brand": "BMW",
+    "model": "5 Series",
+    "imageUrl": "images/bmw 5 series.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 100.00
+  },
+  {
+    "vin": "ROZASYIRNQF89Q36K",
+    "type": "SUV",
+    "brand": "BMW",
+    "model": "X3",
+    "imageUrl": "images/bmw x3.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 100.00
+  },
+  {
+    "vin": "MPQKRE087JTBB4M1M",
+    "type": "SUV",
+    "brand": "BMW",
+    "model": "X5",
+    "imageUrl": "images/bmw x5.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 110.00
+  },
+  {
+    "vin": "T8LN61G0R1WN28MQF",
+    "type": "Coupe",
+    "brand": "BMW",
+    "model": "M4",
+    "imageUrl": "images/bmw m4.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 180.00
+  },
+  {
+    "vin": "DRH0JEYDOWIU138HK",
+    "type": "Sedan",
+    "brand": "Nissan",
+    "model": "Almera",
+    "imageUrl": "images/nissan almera.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 50.00
+  },
+  {
+    "vin": "DRH0JEYDOWIU138HK",
+    "type": "SUV",
+    "brand": "Nissan",
+    "model": "Patrol",
+    "imageUrl": "images/nissan patrol.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 100.00
+  },
+  {
+    "vin": "DRH0JEYDOWIU139HK",
+    "type": "SUV",
+    "brand": "Nissan",
+    "model": "Pathfinder",
+    "imageUrl": "images/nissan pathfinder.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 80.00
+  },
+  {
+    "vin": "DRH0JEYDOWIU324HK",
+    "type": "Coupe",
+    "brand": "Nissan",
+    "model": "Z",
+    "imageUrl": "images/nissan z.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 150.00
+  },
+  {
+    "vin": "DRH0JEYDOWIU326HK",
+    "type": "Sedan",
+    "brand": "Mercedes-Benz",
+    "model": "E-Class",
+    "imageUrl": "images/benz e class.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 120.00
+  },
+  {
+    "vin": "DRH0JEYDOWIU138HK",
+    "type": "SUV",
+    "brand": "Mercedes-Benz",
+    "model": "GLC-Class",
+    "imageUrl": "images/benz glc class.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 150.00
+  },
+  {
+    "vin": "DRH0JEYDOWIU138HK",
+    "type": "Coupe",
+    "brand": "Mercedes-Benz",
+    "model": "CLA-Class",
+    "imageUrl": "images/benz cla class.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 170.00
+  },
+  {
+    "vin": "DRH0JEYDOWIU138HK",
+    "type": "SUV",
+    "brand": "Mercedes-Benz",
+    "model": "G-Class",
+    "imageUrl": "images/benz g class.jpg",
+    "fuelType": "Petrol",
+    "pricePerDay": 220.00
+  }
+]

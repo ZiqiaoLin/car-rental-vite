@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
+</head>
+
+<body class="flex flex-col items-center min-h-screen font-[Bebas_Neue] bg-gray-300 text-gray-800">
+  <nav class="flex justify-between items-center w-full h-12 px-4 border-b border-b-gray-200 bg-white shadow-lg">
+    <a href="/">
+      <img src="/images/logo.png" class="h-10 mt-1">
+    </a>
+    <a href="/booking.html"
+      class="flex items-center justify-center h-8 w-28 text-red-900 border border-red-900 hover:text-stone-50 hover:bg-red-900 pt-0.5 cursor-pointer">My
+      Booking</a>
+  </nav>
+  <main class="flex-1 w-full">
+    <div class="w-4/5 mx-auto bg-white rounded-2xl px-5 py-5 mt-7 text-sm shadow-lg">
+      <div class="flex justify-start gap-4">
+        <div class="flex flex-col relative">
+          <span class="text-lg mb-2">Make</span>
+          <button
+            class="make flex items-center justify-between w-40 h-10 px-2.5 border border-gray-500 rounded-md cursor-pointer hover:border-2 hover:border-red-900">
+            <span>All makes</span>
+            <span
+              class="makeSpan font-[icomoon] transform transition-transform duration-200 pt-0.5 text-xs">&#xe906;</span>
+          </button>
+          <div
+            class="makeDropDown absolute left-0 top-19 bg-white z-10 w-full border border-gray-500 rounded-md hover:border-2 hover:border-red-900 mt-1 px-3 hidden">
+            <ul>
+              <li class="flex items-center h-9 hover:underline cursor-pointer">Toyota</li>
+              <li class="flex items-center h-9 hover:underline cursor-pointer">Nissan</li>
+              <li class="flex items-center h-9 hover:underline cursor-pointer">Mazda</li>
+              <li class="flex items-center h-9 hover:underline cursor-pointer">Subaru</li>
+              <li class="flex items-center h-9 hover:underline cursor-pointer">Ford</li>
+              <li class="flex items-center h-9 hover:underline cursor-pointer">BMW</li>
+              <li class="flex items-center h-9 hover:underline cursor-pointer">Mercedes-Benz</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-col relative">
+          <span class="text-lg mb-2">Body Type</span>
+          <button
+            class="bodyType flex items-center justify-between w-40 h-10 px-2.5 border border-gray-500 rounded-md cursor-pointer hover:border-2 hover:border-red-900">
+            <span>All body types</span>
+            <span
+              class="bodyTypeSpan font-[icomoon] transform transition-transform duration-200 pt-0.5 text-xs">&#xe906;</span>
+          </button>
+          <div
+            class="bodyTypeDropDown absolute left-0 top-19 bg-white z-10 w-full border border-gray-500 rounded-md hover:border-2 hover:border-red-900 mt-1 px-3 hidden">
+            <ul>
+              <li class="flex items-center h-9 hover:underline cursor-pointer">Sedan</li>
+              <li class="flex items-center h-9 hover:underline cursor-pointer">SUV</li>
+              <li class="flex items-center h-9 hover:underline cursor-pointer">Coupe</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="relative mb-2">
+        <div class="flex gap-4">
+          <input type="search" placeholder="Search cars"
+            class="w-3/4 border border-gray-500 rounded-md hover:border-red-900 hover:border focus:border-2 focus:border-red-900 h-10 mt-3 px-2.5 pt-0.5 outline-none">
+          <button
+            class="searchBtn flex items-center justify-center w-1/4 h-10 mt-3 pt-0.5 text-red-900 text-lg border border-red-900 hover:bg-red-900 hover:text-stone-50 cursor-pointer">Search</button>
+        </div>
+        <div
+          class="searchDropDown absolute left-0 bg-white w-3/4 border border-gray-500 rounded-md hover:border-2 hover:border-red-900 mt-1 px-3">
+          <ul>
+            <!-- search suggestions will render here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w-[95%] mx-auto my-7 bg-white rounded-md shadow-sm overflow-hidden">
+      <div id="carList" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-px bg-gray-300 mx-auto">
+        <!-- car list will render here -->
+      </div>
+    </div>
+  </main>
+  <footer class="flex justify-between items-center px-6 h-16 w-full border-t bg-white border-t-gray-200">
+    <a href="/"><img src="/images/logo.png" class="h-10"></a>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
