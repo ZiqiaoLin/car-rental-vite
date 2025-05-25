@@ -7,6 +7,8 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 (function () {
   document.addEventListener('DOMContentLoaded', async () => {
+    const unavailableDiv = document.getElementById('unavailableBooking');
+    const unavailablePer = document.getElementById('unavailablePeriod');
     const emptyDiv = document.getElementById('emptyBooking');
     const cartDiv = document.getElementById('carsCart');
     const listDiv = document.getElementById('carList');
