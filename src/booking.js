@@ -6,7 +6,7 @@ const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 (function () {
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', async () => {
     const emptyDiv = document.getElementById('emptyBooking');
     const cartDiv = document.getElementById('carsCart');
     const listDiv = document.getElementById('carList');
@@ -19,6 +19,40 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
     const inputs = Array.from(form.querySelectorAll('input'));
 
     const selected = JSON.parse(localStorage.getItem('selectedCar'));
+    const savedForm = JSON.parse(localStorage.getItem('bookingForm')) || {};
+    if (selected) {
+      emptyDiv.classList.add('hidden');
+      cartDiv.classList.add('hidden');
+      form.classList.add('hidden');
+      unavailablePer.classList.add('hidden');
+
+      const start = savedForm.startDate;
+      const end = savedForm.endDate;
+      const rangeStart = start || new Date().toISOString().slice(0, 10);
+      const rangeEnd = end || rangeStart;
+
+      const { data: conflict, error } = await supabase
+        .from('bookings')
+        .select('id')
+        .eq('car_id', selected.vin)
+        .overlaps('period', `[${rangeStart},${rangeEnd}]`);
+
+      if (error) {
+        console.error('Check vehicle availability failed', error);
+      }
+
+      if (conflict && conflict.length > 0) {
+        unavailableDiv.classList.remove('hidden');
+        return;
+      }
+    }
+
+    emptyDiv.classList.add('hidden');
+    unavailableDiv.classList.add('hidden');
+    unavailablePer.classList.add('hidden');
+    cartDiv.classList.remove('hidden');
+    form.classList.remove('hidden');
+
     if (selected) {
       emptyDiv.classList.add('hidden');
       cartDiv.classList.remove('hidden');
@@ -42,7 +76,6 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
       listDiv.innerHTML = '';
     }
 
-    const savedForm = JSON.parse(localStorage.getItem('bookingForm')) || {};
     Object.keys(savedForm).forEach(id => {
       const el = document.getElementById(id);
       if (el) el.value = savedForm[id];
